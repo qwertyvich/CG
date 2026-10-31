@@ -1,0 +1,7 @@
+# Local verification files and editor settings
+/.codex-work/
+/.vscode/
+
+# Other local copies of the starter project
+/projects/
+/vulkan-starter-app/
