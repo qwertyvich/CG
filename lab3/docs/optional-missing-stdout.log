@@ -1,0 +1,20 @@
+GPU: AMD Radeon(TM) Graphics / maxStorageBufferRange 4294967295
+Decoded + uploaded assets/textures\black.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\uv_grid.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\stripes.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Optional map missing: assets/textures\panels_specular.png -> black 1x1 fallback
+Optional map missing: assets/textures\panels_emissive.png -> black 1x1 fallback
+Cylinder vertices=206 indices=600
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Dynamic model UBO: buffers=1 sizeof=176 alignment=16 stride=176 offsets=0,176 range=176
+Material 0: UV grid (black fallback) maps=1,0,0
+Material 1: Stripes (black fallback) maps=2,0,0
+Material 2: Panels (specular + emissive) maps=3,0,0

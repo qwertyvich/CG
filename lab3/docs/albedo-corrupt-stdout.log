@@ -1,0 +1,4 @@
+GPU: AMD Radeon(TM) Graphics / maxStorageBufferRange 4294967295
+Decoded + uploaded assets/textures\black.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Cylinder vertices=206 indices=600

@@ -1,0 +1,68 @@
+Версия MSBuild 17.14.60+43b635718 для .NET Framework
+
+Версия MSBuild 17.14.60+43b635718 для .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/CMakeLists.txt
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/build-vs2022/_deps/glfw-src/src/CMakeLists.txt
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/build-vs2022/_deps/vk-bootstrap-src/CMakeLists.txt
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/CMakeLists.txt
+  Compiling lab3-base.frag shader
+  VkBootstrap.cpp
+  scene_tests.cpp
+  context.c
+  Compiling lab3.frag shader
+  init.c
+  Compiling lab3.vert shader
+  input.c
+  Compiling unlit.frag shader
+  Compiling unlit.vert shader
+  monitor.c
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/CMakeLists.txt
+  platform.c
+  vulkan.c
+  window.c
+  egl_context.c
+  osmesa_context.c
+  null_init.c
+  vk-bootstrap.vcxproj -> C:\Users\user\Desktop\CG\lab3\build-vs2022\_deps\vk-bootstrap-build\Debug\vk-bootstrap.lib
+  null_monitor.c
+  null_window.c
+  null_joystick.c
+  scene.cpp
+  win32_module.c
+  win32_time.c
+  win32_thread.c
+  geometry.cpp
+  win32_init.c
+  win32_joystick.c
+  win32_monitor.c
+  image.cpp
+  win32_window.c
+  Создание кода...
+  Компиляция...
+  wgl_context.c
+  Создание кода...
+  glfw.vcxproj -> C:\Users\user\Desktop\CG\lab3\build-vs2022\_deps\glfw-build\src\Debug\glfw3.lib
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/CMakeLists.txt
+  main.cpp
+  Создание кода...
+  graphics_internal.cpp
+  lab3-tests.vcxproj -> C:\Users\user\Desktop\CG\lab3\build-vs2022\Debug\lab3-tests.exe
+  application.cpp
+  scene.cpp
+  geometry.cpp
+  controls.cpp
+  renderer.cpp
+  image.cpp
+  gpu_upload.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_vulkan.cpp
+  imgui.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  imgui_demo.cpp
+  Создание кода...
+  cg-lab3.vcxproj -> C:\Users\user\Desktop\CG\lab3\build-vs2022\Debug\cg-lab3.exe
+  Building Custom Rule C:/Users/user/Desktop/CG/lab3/CMakeLists.txt

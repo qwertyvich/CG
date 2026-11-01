@@ -1,0 +1,5 @@
+lab3-base.frag.spv: exit=0
+lab3.frag.spv: exit=0
+lab3.vert.spv: exit=0
+unlit.frag.spv: exit=0
+unlit.vert.spv: exit=0

@@ -1,0 +1,8 @@
+smoke: exit=0, expected=0, validation messages=0
+portable: exit=0, expected=0, validation messages=0
+optional-missing: exit=0, expected=0, validation messages=0
+albedo-missing: exit=1, expected=1, validation messages=0
+albedo-corrupt: exit=1, expected=1, validation messages=0
+lab1/lab2 SHA-256 unchanged: 62 files
+Pause/resume: identical effect phase during pause
+Explicit validation + synchronization validation enabled; clean implicit layers=True

@@ -1,0 +1,40 @@
+GPU: AMD Radeon(TM) Graphics / maxStorageBufferRange 4294967295
+Decoded + uploaded assets/textures\black.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\uv_grid.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\stripes.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels_specular.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels_emissive.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Cylinder vertices=206 indices=600
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Dynamic model UBO: buffers=1 sizeof=176 alignment=16 stride=176 offsets=0,176 range=176
+Material 0: UV grid (black fallback) maps=1,0,0
+Material 1: Stripes (black fallback) maps=2,0,0
+Material 2: Panels (specular + emissive) maps=3,4,5
+LAB3: panels + animated sampling on object 1, object 2 ordinary
+SMOKE: empty point/spot lists
+LAB3: pause effect phase=0.193658
+LAB3: paused phase=0.193658
+SMOKE: grow both arrays to 33
+SSBO binding 1 capacity 33
+SSBO binding 2 capacity 33
+LAB3: emissive in darkness / black fallback on object 2
+LAB3: shared panels material, different dynamic offsets
+SMOKE: erase first, middle, last; 30 remain
+SMOKE: equal cones, zero direction/intensity, camera and nonuniform scale
+SMOKE: ambient off, point + spot only
+Geometry memory_flags=1 DEVICE_LOCAL=1
+SMOKE: ambient only
+SMOKE: directional specular only
+SMOKE: reset scene
+Geometry memory_flags=1 DEVICE_LOCAL=1
+SMOKE finished: frames=240 validation_errors=0 general_errors=0 status=0

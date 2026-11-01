@@ -1,0 +1,9 @@
+﻿ D .gitignore
+ D README.md
+ M lab1/source/application.cpp
+ M lab2/source/scene.cpp
+?? .codex-work/
+?? .vscode/
+?? lab3/
+?? projects/
+?? vulkan-starter-app/
