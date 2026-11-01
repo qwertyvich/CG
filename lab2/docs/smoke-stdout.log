@@ -1,0 +1,12 @@
+GPU: AMD Radeon(TM) Graphics / maxStorageBufferRange 4294967295
+SMOKE: empty point/spot lists
+SMOKE: grow both arrays to 33
+SSBO binding 1 capacity 33
+SSBO binding 2 capacity 33
+SMOKE: erase first, middle, last; 30 remain
+SMOKE: equal cones, zero direction/intensity, camera and nonuniform scale
+SMOKE: ambient off, point + spot only
+SMOKE: ambient only
+SMOKE: directional specular only
+SMOKE: reset scene
+SMOKE finished: frames=240 validation_errors=0 general_errors=2 status=0

@@ -1,0 +1,63 @@
+Версия MSBuild 17.14.60+43b635718 для .NET Framework
+
+Версия MSBuild 17.14.60+43b635718 для .NET Framework
+
+  1>Checking Build System
+  Compiling lab2.frag shader
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/build-vs2022/_deps/glfw-src/src/CMakeLists.txt
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/build-vs2022/_deps/vk-bootstrap-src/CMakeLists.txt
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/CMakeLists.txt
+  Compiling lab2.vert shader
+  Compiling unlit.frag shader
+  Compiling unlit.vert shader
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/CMakeLists.txt
+  VkBootstrap.cpp
+  context.c
+  scene_tests.cpp
+  init.c
+  input.c
+  monitor.c
+  platform.c
+  vulkan.c
+  scene.cpp
+  window.c
+  egl_context.c
+  osmesa_context.c
+  null_init.c
+  vk-bootstrap.vcxproj -> C:\Users\user\Desktop\CG\lab2\build-vs2022\_deps\vk-bootstrap-build\Debug\vk-bootstrap.lib
+  geometry.cpp
+  null_monitor.c
+  null_window.c
+  null_joystick.c
+  Создание кода...
+  win32_module.c
+  lab2-math-tests.vcxproj -> C:\Users\user\Desktop\CG\lab2\build-vs2022\Debug\lab2-math-tests.exe
+  win32_time.c
+  win32_thread.c
+  win32_init.c
+  win32_joystick.c
+  win32_monitor.c
+  win32_window.c
+  Создание кода...
+  Компиляция...
+  wgl_context.c
+  Создание кода...
+  glfw.vcxproj -> C:\Users\user\Desktop\CG\lab2\build-vs2022\_deps\glfw-build\src\Debug\glfw3.lib
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/CMakeLists.txt
+  main.cpp
+  graphics_internal.cpp
+  application.cpp
+  scene.cpp
+  geometry.cpp
+  controls.cpp
+  renderer.cpp
+  imgui_impl_glfw.cpp
+  imgui_impl_vulkan.cpp
+  imgui.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_widgets.cpp
+  imgui_demo.cpp
+  Создание кода...
+  cg-lab2.vcxproj -> C:\Users\user\Desktop\CG\lab2\build-vs2022\Debug\cg-lab2.exe
+  Building Custom Rule C:/Users/user/Desktop/CG/lab2/CMakeLists.txt

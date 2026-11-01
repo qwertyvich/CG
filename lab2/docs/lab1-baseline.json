@@ -1,0 +1,62 @@
+[
+    {
+        "path":  "lab1/.gitignore",
+        "sha256":  "A14618C9F3D97194E6BCDCE108D040F4AB46BB92C4A3FB442ABC6D2416EEBEBE"
+    },
+    {
+        "path":  "lab1/CMakeLists.txt",
+        "sha256":  "185B5E1EB61754445BB34870255C99AC1284B044545E73F539076E83F860C4BD"
+    },
+    {
+        "path":  "lab1/CMakePresets.json",
+        "sha256":  "0917C32730D5D9898398E2FC5C9ED5B152B32D2A08E119B712FB2E06EBFE421D"
+    },
+    {
+        "path":  "lab1/LAB1_GUIDE.md",
+        "sha256":  "9AA1F3C12B4E35106382872F04276F8F4F5848F133BEEA7AF9CB223680F75D23"
+    },
+    {
+        "path":  "lab1/LICENSE",
+        "sha256":  "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+    },
+    {
+        "path":  "lab1/NOTICE",
+        "sha256":  "B2274473623F636C89D8F1D28F6D6CB7D6A5B1E9B49AB6CB1F05F8B6692E333F"
+    },
+    {
+        "path":  "lab1/README.md",
+        "sha256":  "DAE470AFB93380039C9A3BD1EAAA404E029365CC607E867478A4C49EFE343504"
+    },
+    {
+        "path":  "lab1/shaders/.gitkeep",
+        "sha256":  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+        "path":  "lab1/shaders/lab1.frag",
+        "sha256":  "B0A346C23D1A0C451C527F53129D1860D07D59970D8CB294FFA26EE6A9450919"
+    },
+    {
+        "path":  "lab1/shaders/lab1.vert",
+        "sha256":  "0AB260CF39D4EBFA6C2E7AE309E0E9BDBA90A949F8CE6A8738C288892C45CB25"
+    },
+    {
+        "path":  "lab1/source/application.cpp",
+        "sha256":  "84FFAC5D0586C2E7A728F2ECD01FF8279FB6B1715E4F8DD8F3E90DABFB5E9059"
+    },
+    {
+        "path":  "lab1/source/application.hpp",
+        "sha256":  "3D4E44666081686BF0E1B2D30EAE374A622A35E8B715118810735A04CE17F3F4"
+    },
+    {
+        "path":  "lab1/source/graphics_internal.cpp",
+        "sha256":  "FDB3B408F865C3906959A6DD47FF404A9272399B0F0415F27E850E83A23AB590"
+    },
+    {
+        "path":  "lab1/source/graphics_internal.hpp",
+        "sha256":  "344364CFF0C7D2F411909230A859DF6323B11C820FCB7532AD012D284A797BB2"
+    },
+    {
+        "path":  "lab1/source/main.cpp",
+        "sha256":  "C144670DB726B25AF683C7CD0A2FC919AAD57FC51A80EFAD49DB33FFFF2FB566"
+    }
+]
