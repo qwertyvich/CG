@@ -57,4 +57,4 @@ python lab4\tools\update_code_map.py
 
 `tools/run.cmd` изолирует поиск сторонних implicit layers для запуска: это обход сломанных Steam overlay manifests на этой машине. Explicit Khronos validation и synchronization validation в программе включены. Обычный запуск и изолированный запуск различаются только поиском implicit layers; подробности и реальные логи — в проверках.
 
-Для защиты: [объяснение ЛР4](LAB4_GUIDE.md), [карта кода](CODE_MAP.md), [все элементы UI](UI_REFERENCE.md), [показ базы и допа](DEMO_CHECKLIST.md), [выступление на 15 минут](DEFENSE_15MIN.md), [тренировка](DEFENSE_PRACTICE.md).
+Для защиты: [отличия ЛР3 и ЛР4 по коду на 15 минут](CODE_DIFF_15MIN.md), [объяснение ЛР4](LAB4_GUIDE.md), [карта кода](CODE_MAP.md), [все элементы UI](UI_REFERENCE.md), [показ базы и допа](DEMO_CHECKLIST.md), [выступление с демонстрацией на 15 минут](DEFENSE_15MIN.md), [тренировка](DEFENSE_PRACTICE.md).

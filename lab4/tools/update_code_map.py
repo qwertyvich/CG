@@ -5,6 +5,23 @@ import re
 root=Path(__file__).resolve().parents[1]
 # key, reviewer request, file, unique search string, explanation
 entries=[
+('lab3-render','ЛР3: прежний порядок отрисовки','../lab3/source/renderer.cpp','bool render(','После upload сразу начинался основной render pass; offscreen shadow passes отсутствовали.'),
+('lab3-lighting','ЛР3: свет без visibility','../lab3/shaders/lighting.glsl','result+=evaluateDirectionalLight','Вклад солнца прибавлялся напрямую без проверки препятствия.'),
+('lab3-models','ЛР3: две модели','../lab3/source/scene.hpp','std::array<ModelState,2>','Два цилиндра; пол и ShadowSettings отсутствовали.'),
+('lab3-instance','ЛР3: запрошенная версия Vulkan','../lab3/source/graphics_internal.cpp','auto ibr = ib.require_api_version','Каркас запрашивал Vulkan 1.1; feature dynamicRendering не включалась.'),
+('scene-models','ЛР4: три модели','source/scene.hpp','std::array<ModelState,3>','Добавлен пол; MeshKind выбирает цилиндр или плоскость.'),
+('shadow-settings','Параметры теней на CPU','source/scene.hpp','struct ShadowSettings','Флаги sun/spot, half extent, constant/slope bias и стабильный spot ID.'),
+('shadow-gpu','Данные теней для GLSL','source/scene.hpp','struct alignas(16) ShadowGpu','Две light VP и uvec4 flags; отдельный UBO размером 144 байта.'),
+('light-perspective','Проекция камеры прожектора','source/scene.cpp','Mat4 lightPerspective(','Полный FOV 0.2–178 градусов; камера наблюдателя сохраняет свой диапазон.'),
+('build-uniforms','Прежние model uniforms с неподвижным полом','source/scene.cpp','void buildUniforms(','Model/normal matrix сохранены из ЛР3; общая анимация применяется только к цилиндрам.'),
+('create-descriptors','Создание scene/material descriptor sets','source/renderer.cpp','bool createDescriptors(','Прежние sets дополнены shadow UBO и двумя comparison samplers.'),
+('draw-models-function','Общая функция отрисовки моделей','source/renderer.cpp','void drawModels(','Одинаковые geometry, matrices и dynamic offsets для main и shadow passes.'),
+('renderer-initialize','Создание ресурсов рендерера','source/renderer.cpp','bool initialize()','Общая геометрия cylinder+floor; shadow images, descriptors и depth pipeline.'),
+('renderer-render','Главная функция записи кадра','source/renderer.cpp','bool render(','После upload добавлены buildShadows и два shadow pass перед основным проходом.'),
+('shadow-images-function','Создание карт теней','source/shadows.cpp','bool initializeImages(','Выбор формата, allocation двух images, views и comparison samplers.'),
+('shadow-pipeline-function','Создание depth-only pipeline','source/shadows.cpp','bool initializePipeline(','Отдельный pipeline layout, vertex push, единственный vertex shader и Dynamic Rendering.'),
+('shadow-record-function','Запись прохода одного источника','source/shadows.cpp','void record(','Первый clear/layout, BeginRendering, depth bias, light VP, общий draw, EndRendering и барьер.'),
+('shadow-cleanup','Освобождение ресурсов теней','source/shadows.cpp','void shutdown()','Уничтожение depth pipeline/layout и обеих карт после ожидания GPU рендерером.'),
 ('feature-query','Проверка фактической поддержки','source/graphics_internal.cpp','VkPhysicalDeviceFeatures2 features','Query features2/pNext и аудит device API/расширения для всех GPU.'),
 ('feature-enable','Включение Dynamic Rendering','source/graphics_internal.cpp','.set_required_features_13(required)','vk-bootstrap запрашивает dynamicRendering=true при vkCreateDevice; выбран core 1.3.'),
 ('entry-points','Core команды','source/graphics_internal.cpp','context.beginRendering=reinterpret_cast','vkGetDeviceProcAddr загружает и проверяет core entry points. KHR fallback не реализован.'),
@@ -61,7 +78,7 @@ for key,title,path,needle,explanation in entries:
     escaped_explanation=explanation.replace('|',r'\|')
     lines.append(f'| {title} | {ref} | `{escaped_needle}` | {escaped_explanation} |')
 (root/'CODE_MAP.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
-for name in ['DEMO_CHECKLIST.md','DEFENSE_15MIN.md','DEFENSE_PRACTICE.md']:
+for name in ['DEMO_CHECKLIST.md','DEFENSE_15MIN.md','DEFENSE_PRACTICE.md','CODE_DIFF_15MIN.md']:
     p=root/name
     if not p.exists():continue
     s=p.read_text(encoding='utf-8')

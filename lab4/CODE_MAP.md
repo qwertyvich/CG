@@ -4,6 +4,23 @@
 
 | Что показать | Файл / точная строка | Функция или поисковая строка | Что сказать |
 |---|---|---|---|
+| ЛР3: прежний порядок отрисовки | [../lab3/source/renderer.cpp:361](../lab3/source/renderer.cpp#L361) | `bool render(` | После upload сразу начинался основной render pass; offscreen shadow passes отсутствовали. |
+| ЛР3: свет без visibility | [../lab3/shaders/lighting.glsl:74](../lab3/shaders/lighting.glsl#L74) | `result+=evaluateDirectionalLight` | Вклад солнца прибавлялся напрямую без проверки препятствия. |
+| ЛР3: две модели | [../lab3/source/scene.hpp:74](../lab3/source/scene.hpp#L74) | `std::array<ModelState,2>` | Два цилиндра; пол и ShadowSettings отсутствовали. |
+| ЛР3: запрошенная версия Vulkan | [../lab3/source/graphics_internal.cpp:433](../lab3/source/graphics_internal.cpp#L433) | `auto ibr = ib.require_api_version` | Каркас запрашивал Vulkan 1.1; feature dynamicRendering не включалась. |
+| ЛР4: три модели | [source/scene.hpp:86](source/scene.hpp#L86) | `std::array<ModelState,3>` | Добавлен пол; MeshKind выбирает цилиндр или плоскость. |
+| Параметры теней на CPU | [source/scene.hpp:79](source/scene.hpp#L79) | `struct ShadowSettings` | Флаги sun/spot, half extent, constant/slope bias и стабильный spot ID. |
+| Данные теней для GLSL | [source/scene.hpp:121](source/scene.hpp#L121) | `struct alignas(16) ShadowGpu` | Две light VP и uvec4 flags; отдельный UBO размером 144 байта. |
+| Проекция камеры прожектора | [source/scene.cpp:41](source/scene.cpp#L41) | `Mat4 lightPerspective(` | Полный FOV 0.2–178 градусов; камера наблюдателя сохраняет свой диапазон. |
+| Прежние model uniforms с неподвижным полом | [source/scene.cpp:143](source/scene.cpp#L143) | `void buildUniforms(` | Model/normal matrix сохранены из ЛР3; общая анимация применяется только к цилиндрам. |
+| Создание scene/material descriptor sets | [source/renderer.cpp:34](source/renderer.cpp#L34) | `bool createDescriptors(` | Прежние sets дополнены shadow UBO и двумя comparison samplers. |
+| Общая функция отрисовки моделей | [source/renderer.cpp:303](source/renderer.cpp#L303) | `void drawModels(` | Одинаковые geometry, matrices и dynamic offsets для main и shadow passes. |
+| Создание ресурсов рендерера | [source/renderer.cpp:352](source/renderer.cpp#L352) | `bool initialize()` | Общая геометрия cylinder+floor; shadow images, descriptors и depth pipeline. |
+| Главная функция записи кадра | [source/renderer.cpp:404](source/renderer.cpp#L404) | `bool render(` | После upload добавлены buildShadows и два shadow pass перед основным проходом. |
+| Создание карт теней | [source/shadows.cpp:27](source/shadows.cpp#L27) | `bool initializeImages(` | Выбор формата, allocation двух images, views и comparison samplers. |
+| Создание depth-only pipeline | [source/shadows.cpp:61](source/shadows.cpp#L61) | `bool initializePipeline(` | Отдельный pipeline layout, vertex push, единственный vertex shader и Dynamic Rendering. |
+| Запись прохода одного источника | [source/shadows.cpp:97](source/shadows.cpp#L97) | `void record(` | Первый clear/layout, BeginRendering, depth bias, light VP, общий draw, EndRendering и барьер. |
+| Освобождение ресурсов теней | [source/shadows.cpp:124](source/shadows.cpp#L124) | `void shutdown()` | Уничтожение depth pipeline/layout и обеих карт после ожидания GPU рендерером. |
 | Проверка фактической поддержки | [source/graphics_internal.cpp:465](source/graphics_internal.cpp#L465) | `VkPhysicalDeviceFeatures2 features` | Query features2/pNext и аудит device API/расширения для всех GPU. |
 | Включение Dynamic Rendering | [source/graphics_internal.cpp:477](source/graphics_internal.cpp#L477) | `.set_required_features_13(required)` | vk-bootstrap запрашивает dynamicRendering=true при vkCreateDevice; выбран core 1.3. |
 | Core команды | [source/graphics_internal.cpp:505](source/graphics_internal.cpp#L505) | `context.beginRendering=reinterpret_cast` | vkGetDeviceProcAddr загружает и проверяет core entry points. KHR fallback не реализован. |
