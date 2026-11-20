@@ -1,0 +1,20 @@
+directional: real client capture, exit=0, validation/general messages=0
+no-shadows: real client capture, exit=0, validation/general messages=0
+spot: real client capture, exit=0, validation/general messages=0
+spot-no-shadows: real client capture, exit=0, validation/general messages=0
+combined: real client capture, exit=0, validation/general messages=0
+combined-no-shadows: real client capture, exit=0, validation/general messages=0
+sampling-static: real client capture, exit=0, validation/general messages=0
+sampling-static-no-shadows: real client capture, exit=0, validation/general messages=0
+model-shift: real client capture, exit=0, validation/general messages=0
+camera-shift: real client capture, exit=0, validation/general messages=0
+sun-shift: real client capture, exit=0, validation/general messages=0
+spot-shift: real client capture, exit=0, validation/general messages=0
+small-coverage: real client capture, exit=0, validation/general messages=0
+zero-bias: real client capture, exit=0, validation/general messages=0
+large-bias: real client capture, exit=0, validation/general messages=0
+emission: real client capture, exit=0, validation/general messages=0
+directional vs no-shadows: 12013 changed scene pixels (>12 levels), 0 unexpectedly brighter pixels
+spot vs spot-no-shadows: 14611 changed scene pixels (>12 levels), 0 unexpectedly brighter pixels
+combined vs combined-no-shadows: 24948 changed scene pixels (>12 levels), 0 unexpectedly brighter pixels
+sampling-static vs sampling-static-no-shadows: 12013 changed scene pixels (>12 levels), 0 unexpectedly brighter pixels

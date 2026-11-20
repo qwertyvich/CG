@@ -1,0 +1,6 @@
+PASS lab4-base.frag.spv
+PASS lab4.frag.spv
+PASS lab4.vert.spv
+PASS shadow.vert.spv
+PASS unlit.frag.spv
+PASS unlit.vert.spv

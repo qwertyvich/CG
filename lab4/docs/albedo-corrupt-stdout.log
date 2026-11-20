@@ -1,0 +1,11 @@
+Instance API: 1.3
+Device audit: AMD Radeon(TM) Graphics API 1.2.196 extensions=127 VK_KHR_dynamic_rendering=1 dynamicRendering=1
+Device audit: NVIDIA GeForce RTX 3050 Laptop GPU API 1.3.289 extensions=225 VK_KHR_dynamic_rendering=1 dynamicRendering=1
+Selected GPU: NVIDIA GeForce RTX 3050 Laptop GPU API 1.3.289 Dynamic Rendering path=core 1.3 feature explicitly enabled
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU / maxStorageBufferRange 4294967295
+Decoded + uploaded assets/textures\black.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Cylinder vertices=206 indices=600
+Floor vertices=4 indices=6
+Shadow pass count[0]=0
+Shadow pass count[1]=0

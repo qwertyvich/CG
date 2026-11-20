@@ -1,0 +1,16 @@
+smoke: exit=0, validation messages=0, general messages=0
+portable-directional: exit=0, validation messages=0, general messages=0
+directional: shadow draws on every active frame, pass counts=(60, 0)
+portable-spot: exit=0, validation messages=0, general messages=0
+spot: shadow draws on every active frame, pass counts=(0, 60)
+portable-combined: exit=0, validation messages=0, general messages=0
+combined: shadow draws on every active frame, pass counts=(60, 60)
+portable-no-shadows: exit=0, validation messages=0, general messages=0
+no-shadows: shadow draws on every active frame, pass counts=(0, 0)
+portable-sampling: exit=0, validation messages=0, general messages=0
+sampling: shadow draws on every active frame, pass counts=(60, 0)
+optional-missing: exit=0, validation messages=0, general messages=0
+albedo-missing: exit=1, validation messages=0, general messages=0
+albedo-corrupt: exit=1, validation messages=0, general messages=0
+lab1/lab2/lab3 SHA-256 unchanged: 114 files
+Explicit validation + synchronization validation enabled; clean implicit layers=True

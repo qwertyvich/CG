@@ -1,0 +1,12 @@
+Версия MSBuild 17.14.60+43b635718 для .NET Framework
+
+  vk-bootstrap.vcxproj -> C:\Users\user\Desktop\CG\lab4\build-vs2022\_deps\vk-bootstrap-build\Debug\vk-bootstrap.lib
+  scene.cpp
+  glfw.vcxproj -> C:\Users\user\Desktop\CG\lab4\build-vs2022\_deps\glfw-build\src\Debug\glfw3.lib
+  application.cpp
+  lab4-tests.vcxproj -> C:\Users\user\Desktop\CG\lab4\build-vs2022\Debug\lab4-tests.exe
+  controls.cpp
+  scene.cpp
+  shadows.cpp
+  Создание кода...
+  cg-lab4.vcxproj -> C:\Users\user\Desktop\CG\lab4\build-vs2022\Debug\cg-lab4.exe

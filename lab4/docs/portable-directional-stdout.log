@@ -1,0 +1,33 @@
+Instance API: 1.3
+Device audit: AMD Radeon(TM) Graphics API 1.2.196 extensions=127 VK_KHR_dynamic_rendering=1 dynamicRendering=1
+Device audit: NVIDIA GeForce RTX 3050 Laptop GPU API 1.3.289 extensions=225 VK_KHR_dynamic_rendering=1 dynamicRendering=1
+Selected GPU: NVIDIA GeForce RTX 3050 Laptop GPU API 1.3.289 Dynamic Rendering path=core 1.3 feature explicitly enabled
+GPU: NVIDIA GeForce RTX 3050 Laptop GPU / maxStorageBufferRange 4294967295
+Decoded + uploaded assets/textures\black.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\uv_grid.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\stripes.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels_specular.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\panels_emissive.png 512x512
+Texture memory_flags=1 DEVICE_LOCAL=1
+Decoded + uploaded assets/textures\white.png 1x1
+Texture memory_flags=1 DEVICE_LOCAL=1
+Cylinder vertices=206 indices=600
+Floor vertices=4 indices=6
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Geometry memory_flags=1 DEVICE_LOCAL=1
+Shadow maps: count=2 resolution=2048 format=126 compare=LESS filter=NEAREST
+Dynamic model UBO: buffers=1 sizeof=176 alignment=64 stride=192 models=3 offsets=0,192,384 range=176
+Material 0: UV grid (black fallback) maps=1,0,0
+Material 1: Stripes (black fallback) maps=2,0,0
+Material 2: Panels (specular + emissive) maps=3,4,5
+Material 3: Floor (white) maps=6,0,0
+Shadow pass count[0]=60
+Shadow pass count[1]=0

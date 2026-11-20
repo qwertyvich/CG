@@ -1,0 +1,6 @@
+build*/
+.vs/
+*.spv
+imgui.ini
+__pycache__/
+CONTINUE_HERE.md
