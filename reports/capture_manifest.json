@@ -1,0 +1,88 @@
+[
+  {
+    "image": "lab1-orthographic.png",
+    "application": "lab1",
+    "exit_code": 0,
+    "args": [],
+    "clicks": [
+      [
+        143,
+        85
+      ]
+    ],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab1-perspective.png",
+    "application": "lab1",
+    "exit_code": 0,
+    "args": [],
+    "clicks": [],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab2-lighting.png",
+    "application": "lab2",
+    "exit_code": 0,
+    "args": [],
+    "clicks": [],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab2-nohelpers.png",
+    "application": "lab2",
+    "exit_code": 0,
+    "args": [],
+    "clicks": [
+      [
+        31,
+        551
+      ],
+      [
+        75,
+        574
+      ]
+    ],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab3-emissive.png",
+    "application": "lab3",
+    "exit_code": 0,
+    "args": [
+      "--demo=emission"
+    ],
+    "clicks": [],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab3-textures.png",
+    "application": "lab3",
+    "exit_code": 0,
+    "args": [
+      "--demo=base"
+    ],
+    "clicks": [],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab4-combined.png",
+    "application": "lab4",
+    "exit_code": 0,
+    "args": [
+      "--demo=combined"
+    ],
+    "clicks": [],
+    "validation_messages": 0
+  },
+  {
+    "image": "lab4-directional.png",
+    "application": "lab4",
+    "exit_code": 0,
+    "args": [
+      "--demo=directional"
+    ],
+    "clicks": [],
+    "validation_messages": 0
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "pdf": "Салихов_Р.Р._М8О-309БВ-24_ЛР1-4.pdf",
+  "pages": 23,
+  "images": 8,
+  "image_pages": [
+    5,
+    6,
+    10,
+    11,
+    15,
+    16,
+    21,
+    22
+  ],
+  "author": "Салихов Руслан Р.",
+  "group": "М8О-309БВ-24",
+  "sha256": "90a845107c55860793e16ea5bece012446dfe18c1ffa31937b5dd0138b12ec90",
+  "a4_all_pages": true,
+  "text_and_images_within_margins": true,
+  "embedded_font_glyph_check": "PASS",
+  "outline_entries": 21,
+  "previous_labs_baseline_files_unchanged": 114,
+  "capture_date": "2026-11-20"
+}
