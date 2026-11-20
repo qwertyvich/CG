@@ -36,7 +36,7 @@ S={
 def p(text,style='body'):return Paragraph(text,S[style])
 
 class Cover(Flowable):
-    def __init__(self,lab):super().__init__();self.lab=lab;self.width=TW;self.height=TH-1
+    def __init__(self):super().__init__();self.width=TW;self.height=TH-1
     def draw(self):
         c=self.canv
         def center(text,y,font=14,bold=False):
@@ -47,9 +47,9 @@ class Cover(Flowable):
         y=center('(НАЦИОНАЛЬНЫЙ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ)',y-3,12)
         y=center('Институт № 8 «Компьютерные науки и прикладная математика»',y-15,12)
         y=center('Кафедра 806 «Вычислительная математика и программирование»',y-5,12)
-        y=center(f'ЛАБОРАТОРНАЯ РАБОТА № {self.lab["number"]}',self.height-245,16,True)
+        y=center('ОТЧЕТ ПО ЛАБОРАТОРНЫМ РАБОТАМ № 1-4',self.height-225,16,True)
         y=center('по курсу «Компьютерная графика»',y-12,14)
-        y=center(self.lab['title'],y-20,16,True)
+        y=center('Основы 3D-графики<br/>Камера и освещение<br/>Текстурирование<br/>Наложение теней',y-20,14,True)
         center('Вариант 8',y-12,14)
         style=ParagraphStyle('Names',fontName='TNR',fontSize=14,leading=24,alignment=TA_LEFT)
         names=f'Выполнил: {DATA["author"]}<br/>Группа: {DATA["group"]}<br/>Преподаватель: {DATA["teacher"]}'
@@ -81,12 +81,11 @@ toc=TableOfContents();toc.levelStyles=[
 def heading(text,key,level=1):
     q=p(text,'lab' if level==0 else 'section');q.toc_title=text;q.toc_key=key;q.toc_level=level;story.append(q)
 
+story.append(Cover());story.extend([NextPageTemplate('body'),PageBreak()])
+story.append(p('СОДЕРЖАНИЕ','lab'));story.append(toc);story.append(PageBreak())
 for lab in DATA['labs']:
     n=lab['number']
-    if n>1:story.extend([NextPageTemplate('cover'),PageBreak()])
-    story.append(Cover(lab));story.extend([NextPageTemplate('body'),PageBreak()])
-    if n==1:
-        story.append(p('СОДЕРЖАНИЕ','lab'));story.append(toc);story.append(PageBreak())
+    if n>1:story.append(PageBreak())
     heading(f'Лабораторная работа № {n}<br/>{lab["title"]}',f'lab-{n}',0)
     heading('1 Условие',f'lab-{n}-condition')
     for i,text in enumerate(lab['condition']):story.append(p(text+(f' [{n}]' if i==0 else '')))
