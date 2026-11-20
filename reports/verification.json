@@ -14,12 +14,13 @@
   ],
   "author": "Салихов Руслан Р.",
   "group": "М8О-309БВ-24",
-  "sha256": "885f5570c6f6a7f253051824635b5cf83d551d473a4896584f88d407514fd20a",
+  "sha256": "ea5d3bd9a36ad4b502b7229a8325114e351bb9f9036265e30df39e7c9c70120f",
   "a4_all_pages": true,
   "text_and_images_within_margins": true,
   "embedded_font_glyph_check": "PASS",
   "outline_entries": 21,
   "previous_labs_baseline_files_unchanged": 114,
   "capture_date": "2026-11-20",
-  "cover_pages": 1
+  "cover_pages": 1,
+  "bibliography_entries": 7
 }
